@@ -10,14 +10,14 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class AVViewController: AVPlayerViewController{
+class AVViewController: AVPlayerViewController, AVPlayerViewControllerDelegate{
 
     var path: URL?
     let playerViewController = AVPlayerViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -27,6 +27,7 @@ class AVViewController: AVPlayerViewController{
         
         //method 0: use this method when you're using AVPlayerViewController.
         self.player = AVPlayer(url: path!)
+        self.allowsPictureInPicturePlayback = true
         
         //You may choose one of these 2 methods when create an AVPlayerView using UIViewController.
         //method 1
@@ -49,7 +50,48 @@ class AVViewController: AVPlayerViewController{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func playerViewControllerWillStartPictureInPicture(_ playerViewController: AVPlayerViewController) {
+        print("PIP is about to start")
+        UIApplication.shared.perform(#selector(URLSessionTask.suspend))
+    }
+    
+    func playerViewControllerDidStartPictureInPicture(_ playerViewController: AVPlayerViewController) {
+        print("PIP started")
+    }
+    
+    func playerViewController(_ playerViewController: AVPlayerViewController, failedToStartPictureInPictureWithError error: Error) {
+        print("PIP fails to start")
+    }
+    
+    func playerViewControllerWillStopPictureInPicture(_ playerViewController: AVPlayerViewController) {
+        print("PIP is about to stop")
+    }
+    
+    func playerViewControllerDidStopPictureInPicture(_ playerViewController: AVPlayerViewController) {
+        print("PIP stopped")
+    }
+    
+    func playerViewControllerShouldAutomaticallyDismissAtPictureInPictureStart(_ playerViewController: AVPlayerViewController) -> Bool {
+        return false
+    }
+    
+    func playerViewController(_ playerViewController: AVPlayerViewController, restoreUserInterfaceForPictureInPictureStopWithCompletionHandler completionHandler: @escaping (Bool) -> Void){
+        let currentViewController = navigationController?.visibleViewController
+        
+        if currentViewController != playerViewController {
+            if let topViewController = navigationController?.topViewController {
+                print("restoring PIP")
+                topViewController.present(playerViewController, animated: true, completion: {()
+                      completionHandler(true)
+                })
+            } else {
+                print("topViewController is nil")
+            }
+        } else {
+            print("currentViewController is playerViewController")
+        }
+    }
 
 }
 

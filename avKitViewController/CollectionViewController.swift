@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class CollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
+    
     let fileManager = FileManager.default
     let path = Bundle.main.resourcePath! + "/aset"
     var pathFiles = [String]()
@@ -81,7 +81,7 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         let availableWidth = view.frame.width - paddingSpace
         let widthPerItem = availableWidth / itemsPerRow
         
-        return CGSize(width: widthPerItem, height: widthPerItem)
+        return CGSize(width: widthPerItem, height: widthPerItem*(9/16))
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
