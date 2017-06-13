@@ -45,8 +45,7 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
             
             let theCell = sender as! UICollectionViewCell
             let indexPath = self.collectionView?.indexPath(for: theCell)
-            //let aset = AVURLAsset(url: URL(fileURLWithPath: path+"/\(pathFiles[theSender.tag])"), options: nil)
-            destVC.path = URL(fileURLWithPath: path+"/\(pathFiles[indexPath!.item])")
+            destVC.path = URL(fileURLWithPath: path+"/\(pathFiles[indexPath!.item])") //URL(string: "some_url")
         }
     }
     
