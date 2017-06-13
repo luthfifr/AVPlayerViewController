@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		CF95BC091EEFA19300CEC00C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC081EEFA19300CEC00C /* AppDelegate.swift */; };
-		CF95BC0B1EEFA19300CEC00C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC0A1EEFA19300CEC00C /* ViewController.swift */; };
+		CF95BC0B1EEFA19300CEC00C /* AVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC0A1EEFA19300CEC00C /* AVViewController.swift */; };
 		CF95BC0E1EEFA19300CEC00C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF95BC0C1EEFA19300CEC00C /* Main.storyboard */; };
 		CF95BC101EEFA19300CEC00C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF95BC0F1EEFA19300CEC00C /* Assets.xcassets */; };
 		CF95BC131EEFA19300CEC00C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF95BC111EEFA19300CEC00C /* LaunchScreen.storyboard */; };
 		CF95BC1E1EEFA19300CEC00C /* avKitViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC1D1EEFA19300CEC00C /* avKitViewControllerTests.swift */; };
 		CF95BC291EEFA19300CEC00C /* avKitViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC281EEFA19300CEC00C /* avKitViewControllerUITests.swift */; };
+		CF95BC371EEFF87800CEC00C /* aset in Resources */ = {isa = PBXBuildFile; fileRef = CF95BC361EEFF87800CEC00C /* aset */; };
+		CF95BC381EEFF87800CEC00C /* aset in Resources */ = {isa = PBXBuildFile; fileRef = CF95BC361EEFF87800CEC00C /* aset */; };
+		CF95BC391EEFF87800CEC00C /* aset in Resources */ = {isa = PBXBuildFile; fileRef = CF95BC361EEFF87800CEC00C /* aset */; };
+		CF95BC3B1EF0041D00CEC00C /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC3A1EF0041D00CEC00C /* CollectionViewController.swift */; };
+		CF95BC3C1EF0041D00CEC00C /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC3A1EF0041D00CEC00C /* CollectionViewController.swift */; };
+		CF95BC3D1EF0041D00CEC00C /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC3A1EF0041D00CEC00C /* CollectionViewController.swift */; };
+		CF95BC3F1EF00A4000CEC00C /* PhotoCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC3E1EF00A4000CEC00C /* PhotoCVC.swift */; };
+		CF95BC401EF00A4000CEC00C /* PhotoCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC3E1EF00A4000CEC00C /* PhotoCVC.swift */; };
+		CF95BC411EF00A4000CEC00C /* PhotoCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC3E1EF00A4000CEC00C /* PhotoCVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +45,7 @@
 /* Begin PBXFileReference section */
 		CF95BC051EEFA19300CEC00C /* avKitViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = avKitViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF95BC081EEFA19300CEC00C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF95BC0A1EEFA19300CEC00C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF95BC0A1EEFA19300CEC00C /* AVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVViewController.swift; sourceTree = "<group>"; };
 		CF95BC0D1EEFA19300CEC00C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF95BC0F1EEFA19300CEC00C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF95BC121EEFA19300CEC00C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +56,9 @@
 		CF95BC241EEFA19300CEC00C /* avKitViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = avKitViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF95BC281EEFA19300CEC00C /* avKitViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avKitViewControllerUITests.swift; sourceTree = "<group>"; };
 		CF95BC2A1EEFA19300CEC00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF95BC361EEFF87800CEC00C /* aset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = aset; sourceTree = "<group>"; };
+		CF95BC3A1EF0041D00CEC00C /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		CF95BC3E1EF00A4000CEC00C /* PhotoCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				CF95BC081EEFA19300CEC00C /* AppDelegate.swift */,
-				CF95BC0A1EEFA19300CEC00C /* ViewController.swift */,
+				CF95BC3A1EF0041D00CEC00C /* CollectionViewController.swift */,
+				CF95BC3E1EF00A4000CEC00C /* PhotoCVC.swift */,
+				CF95BC0A1EEFA19300CEC00C /* AVViewController.swift */,
 				CF95BC0C1EEFA19300CEC00C /* Main.storyboard */,
+				CF95BC361EEFF87800CEC00C /* aset */,
 				CF95BC0F1EEFA19300CEC00C /* Assets.xcassets */,
 				CF95BC111EEFA19300CEC00C /* LaunchScreen.storyboard */,
 				CF95BC141EEFA19300CEC00C /* Info.plist */,
@@ -236,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF95BC131EEFA19300CEC00C /* LaunchScreen.storyboard in Resources */,
+				CF95BC371EEFF87800CEC00C /* aset in Resources */,
 				CF95BC101EEFA19300CEC00C /* Assets.xcassets in Resources */,
 				CF95BC0E1EEFA19300CEC00C /* Main.storyboard in Resources */,
 			);
@@ -245,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF95BC381EEFF87800CEC00C /* aset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF95BC391EEFF87800CEC00C /* aset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF95BC0B1EEFA19300CEC00C /* ViewController.swift in Sources */,
+				CF95BC3B1EF0041D00CEC00C /* CollectionViewController.swift in Sources */,
+				CF95BC0B1EEFA19300CEC00C /* AVViewController.swift in Sources */,
 				CF95BC091EEFA19300CEC00C /* AppDelegate.swift in Sources */,
+				CF95BC3F1EF00A4000CEC00C /* PhotoCVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF95BC3C1EF0041D00CEC00C /* CollectionViewController.swift in Sources */,
+				CF95BC401EF00A4000CEC00C /* PhotoCVC.swift in Sources */,
 				CF95BC1E1EEFA19300CEC00C /* avKitViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +301,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF95BC3D1EF0041D00CEC00C /* CollectionViewController.swift in Sources */,
+				CF95BC411EF00A4000CEC00C /* PhotoCVC.swift in Sources */,
 				CF95BC291EEFA19300CEC00C /* avKitViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
