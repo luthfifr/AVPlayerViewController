@@ -12,12 +12,22 @@ import AVFoundation
 
 class AVViewController: AVPlayerViewController, AVPlayerViewControllerDelegate{
 
-    var path: URL?
+    var selectedPath: URL?
+    let fileManager = FileManager.default
+    let path = Bundle.main.resourcePath! + "/aset"
+    var pathFiles = [String]()
+    var paths: [URL]?
     let playerViewController = AVPlayerViewController()
-    
+    let playerQueue = AVQueuePlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
+        
+        self.pathFiles = try! self.fileManager.contentsOfDirectory(atPath: self.path)
+        
+        for pathFile in pathFiles {
+            self.paths?.append(URL(fileURLWithPath: path+"/\(pathFile)"))
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -26,7 +36,7 @@ class AVViewController: AVPlayerViewController, AVPlayerViewControllerDelegate{
         //These 3 methods give the same result to play a video. The difference is only the class that you use to create the AVPlayerView.
         
         //method 0: use this method when you're using AVPlayerViewController.
-        self.player = AVPlayer(url: path!)
+        self.player = AVPlayer(url: selectedPath!)
         self.allowsPictureInPicturePlayback = true
         
         //You may choose one of these 2 methods when create an AVPlayerView using UIViewController.
@@ -49,6 +59,30 @@ class AVViewController: AVPlayerViewController, AVPlayerViewControllerDelegate{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func skipToPreviousItem(for: AVPlayerViewController) {
+        let curr_item = ((self.player?.currentItem?.asset) as? AVURLAsset)?.url
+        let curr_index = paths?.index(of: curr_item!)
+        var willBePlayed: URL?
+        if curr_index!-1 < 0 {
+            willBePlayed = paths?[(paths?.endIndex)!]
+        } else {
+            willBePlayed = paths?[curr_index!-1]
+        }
+        self.player = AVPlayer(url: willBePlayed!)
+    }
+    
+    func skipToNextItem(for: AVPlayerViewController){
+        let curr_item = ((self.player?.currentItem?.asset) as? AVURLAsset)?.url
+        let curr_index = paths?.index(of: curr_item!)
+        var willBePlayed: URL?
+        if curr_index!+1 > (paths?.count)! {
+            willBePlayed = paths?[(paths?.startIndex)!]
+        } else {
+            willBePlayed = paths?[curr_index!+1]
+        }
+        self.player = AVPlayer(url: willBePlayed!)
     }
     
     func playerViewControllerWillStartPictureInPicture(_ playerViewController: AVPlayerViewController) {

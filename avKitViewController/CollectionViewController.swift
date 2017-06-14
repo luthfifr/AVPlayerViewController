@@ -27,7 +27,6 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         collectionView.dataSource = self
 
         self.pathFiles = try! self.fileManager.contentsOfDirectory(atPath: self.path)
-        print(pathFiles)
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,7 +44,7 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
             
             let theCell = sender as! UICollectionViewCell
             let indexPath = self.collectionView?.indexPath(for: theCell)
-            destVC.path = URL(fileURLWithPath: path+"/\(pathFiles[indexPath!.item])") //URL(string: "some_url")
+            destVC.selectedPath = URL(fileURLWithPath: path+"/\(pathFiles[indexPath!.item])") //URL(string: "some_url")
         }
     }
     
