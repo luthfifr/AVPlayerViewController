@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF95912D1EF2368B0024877E /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95912C1EF2368B0024877E /* PopOverViewController.swift */; };
 		CF95BC091EEFA19300CEC00C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC081EEFA19300CEC00C /* AppDelegate.swift */; };
 		CF95BC0B1EEFA19300CEC00C /* AVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC0A1EEFA19300CEC00C /* AVViewController.swift */; };
 		CF95BC0E1EEFA19300CEC00C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF95BC0C1EEFA19300CEC00C /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF95912C1EF2368B0024877E /* PopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
 		CF95BC051EEFA19300CEC00C /* avKitViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = avKitViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF95BC081EEFA19300CEC00C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF95BC0A1EEFA19300CEC00C /* AVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				CF95BC3A1EF0041D00CEC00C /* CollectionViewController.swift */,
 				CF95BC3E1EF00A4000CEC00C /* PhotoCVC.swift */,
 				CF95BC0A1EEFA19300CEC00C /* AVViewController.swift */,
+				CF95912C1EF2368B0024877E /* PopOverViewController.swift */,
 				CF95BC0C1EEFA19300CEC00C /* Main.storyboard */,
 				CF95BC361EEFF87800CEC00C /* aset */,
 				CF95BC0F1EEFA19300CEC00C /* Assets.xcassets */,
@@ -282,6 +285,7 @@
 			files = (
 				CF95BC3B1EF0041D00CEC00C /* CollectionViewController.swift in Sources */,
 				CF95BC0B1EEFA19300CEC00C /* AVViewController.swift in Sources */,
+				CF95912D1EF2368B0024877E /* PopOverViewController.swift in Sources */,
 				CF95BC091EEFA19300CEC00C /* AppDelegate.swift in Sources */,
 				CF95BC3F1EF00A4000CEC00C /* PhotoCVC.swift in Sources */,
 			);
@@ -540,6 +544,7 @@
 				CF95BC2F1EEFA19300CEC00C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF95BC301EEFA19300CEC00C /* Build configuration list for PBXNativeTarget "avKitViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +553,7 @@
 				CF95BC321EEFA19300CEC00C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF95BC331EEFA19300CEC00C /* Build configuration list for PBXNativeTarget "avKitViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +562,7 @@
 				CF95BC351EEFA19300CEC00C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

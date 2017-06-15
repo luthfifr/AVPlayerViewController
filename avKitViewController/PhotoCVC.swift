@@ -11,4 +11,6 @@ import UIKit
 class PhotoCVC: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var label_fileName: UILabel!
+    
 }

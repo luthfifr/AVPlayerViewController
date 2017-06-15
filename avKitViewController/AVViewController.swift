@@ -19,6 +19,7 @@ class AVViewController: AVPlayerViewController, AVPlayerViewControllerDelegate{
     var paths: [URL]?
     let playerViewController = AVPlayerViewController()
     let playerQueue = AVQueuePlayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
@@ -37,7 +38,16 @@ class AVViewController: AVPlayerViewController, AVPlayerViewControllerDelegate{
         
         //method 0: use this method when you're using AVPlayerViewController.
         self.player = AVPlayer(url: selectedPath!)
+        
         self.allowsPictureInPicturePlayback = true
+        
+        if !(player?.currentItem?.asset.isPlayable)! {
+            let alertStatus = UIAlertController (title: "Media Playback Error", message: "This media can not be played. Please select another media.", preferredStyle: UIAlertControllerStyle.alert)
+            alertStatus.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.default,handler:  {(action) in
+                self.dismiss(animated: true, completion: nil)
+            }))
+            self.present(alertStatus, animated: true, completion: nil)
+        }
         
         //You may choose one of these 2 methods when create an AVPlayerView using UIViewController.
         //method 1

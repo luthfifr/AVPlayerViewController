@@ -6,9 +6,61 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Pop Over View Controller-->
+        <scene sceneID="Xcv-22-JeN">
+            <objects>
+                <viewController modalPresentationStyle="currentContext" id="QRq-Tb-5Py" customClass="PopOverViewController" customModule="avKitViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MW3-PB-S5d"/>
+                        <viewControllerLayoutGuide type="bottom" id="KWt-Az-C93"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hpo-Fk-oGT">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJB-0m-PsY">
+                                <rect key="frame" x="412" y="224" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.49411764705882355" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="wmo-6N-Kl9"/>
+                                </constraints>
+                                <state key="normal" title="Play Media">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hpM-Iv-LeC" kind="presentation" identifier="segueOnlineMedia" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="LBa-zK-FLT"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Media URL" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3rq-DQ-0Fy">
+                                <rect key="frame" x="412" y="143" width="200" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3rq-DQ-0Fy" firstAttribute="top" secondItem="MW3-PB-S5d" secondAttribute="bottom" constant="123" id="LBU-F6-KFI"/>
+                            <constraint firstItem="iJB-0m-PsY" firstAttribute="trailing" secondItem="3rq-DQ-0Fy" secondAttribute="trailing" id="Qtb-1c-Mn8"/>
+                            <constraint firstItem="iJB-0m-PsY" firstAttribute="top" secondItem="3rq-DQ-0Fy" secondAttribute="bottom" constant="51" id="b9X-ZZ-fej"/>
+                            <constraint firstItem="iJB-0m-PsY" firstAttribute="centerX" secondItem="hpo-Fk-oGT" secondAttribute="centerX" id="heJ-ns-bNQ"/>
+                            <constraint firstItem="iJB-0m-PsY" firstAttribute="leading" secondItem="3rq-DQ-0Fy" secondAttribute="leading" id="jTL-AK-qRD"/>
+                            <constraint firstItem="3rq-DQ-0Fy" firstAttribute="centerX" secondItem="hpo-Fk-oGT" secondAttribute="centerX" id="y5K-YC-Cfi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn_playMedia" destination="iJB-0m-PsY" id="NA6-di-Imx"/>
+                        <outlet property="text_URL" destination="3rq-DQ-0Fy" id="v4L-1o-dTb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yg1-XA-zXH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="933.98437499999989" y="-546.41288433382135"/>
+        </scene>
         <!--AV Player View Controller-->
         <scene sceneID="nLS-nV-285">
             <objects>
@@ -42,16 +94,37 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S97-Rq-GJA">
                                             <rect key="frame" x="0.0" y="0.0" width="111" height="111"/>
                                         </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZa-Wc-q5s">
+                                            <rect key="frame" x="0.0" y="88" width="111" height="23"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kke-tB-ElL">
+                                                    <rect key="frame" x="34" y="1" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="23" id="vzI-oz-mLi"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                 </view>
                                 <constraints>
+                                    <constraint firstItem="MZa-Wc-q5s" firstAttribute="leading" secondItem="qSz-VC-1Qq" secondAttribute="leading" id="3j5-ZR-c1A"/>
                                     <constraint firstAttribute="trailing" secondItem="S97-Rq-GJA" secondAttribute="trailing" id="4Hg-uA-ibH"/>
                                     <constraint firstItem="S97-Rq-GJA" firstAttribute="leading" secondItem="qSz-VC-1Qq" secondAttribute="leading" id="DBd-kG-Lvi"/>
+                                    <constraint firstAttribute="trailing" secondItem="MZa-Wc-q5s" secondAttribute="trailing" id="Fb0-vb-J4e"/>
                                     <constraint firstItem="S97-Rq-GJA" firstAttribute="top" secondItem="qSz-VC-1Qq" secondAttribute="top" id="H8P-QX-tRL"/>
+                                    <constraint firstItem="MZa-Wc-q5s" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qSz-VC-1Qq" secondAttribute="topMargin" constant="80" id="QLp-uB-vuK"/>
                                     <constraint firstAttribute="bottom" secondItem="S97-Rq-GJA" secondAttribute="bottom" id="h14-gz-Fge"/>
+                                    <constraint firstAttribute="bottom" secondItem="MZa-Wc-q5s" secondAttribute="bottom" id="m5x-b5-8m8"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="imageView" destination="S97-Rq-GJA" id="7fk-jX-pev"/>
+                                    <outlet property="label_fileName" destination="kke-tB-ElL" id="kz5-km-PIG"/>
                                     <segue destination="hpM-Iv-LeC" kind="presentation" identifier="segueVideo" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="xHo-4R-GMe"/>
                                 </connections>
                             </collectionViewCell>
@@ -61,14 +134,25 @@
                             <outlet property="delegate" destination="uBO-eF-WlV" id="SAT-Gm-Ft4"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="j22-Rs-zLA"/>
+                    <navigationItem key="navigationItem" id="j22-Rs-zLA">
+                        <barButtonItem key="rightBarButtonItem" title="Play Media From Internet" id="Pcq-e9-MsW">
+                            <connections>
+                                <segue destination="QRq-Tb-5Py" kind="popoverPresentation" identifier="seguePopOver" popoverAnchorBarButtonItem="Pcq-e9-MsW" id="n0J-v7-gtA">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    <popoverPassthroughViews>
+                                        <collectionView reference="qJR-7r-kzT"/>
+                                    </popoverPassthroughViews>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="qJR-7r-kzT" id="Uga-t9-2vP"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aAm-Le-mRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="149" y="187"/>
+            <point key="canvasLocation" x="148.828125" y="186.67642752562224"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AW1-o1-Ssf">
@@ -89,4 +173,7 @@
             <point key="canvasLocation" x="-594.140625" y="186.67642752562224"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="LBa-zK-FLT"/>
+    </inferredMetricsTieBreakers>
 </document>

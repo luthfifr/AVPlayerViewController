@@ -63,11 +63,36 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         
         cell.backgroundColor = UIColor.black
         
+        var isVideo = false
+        var isAudio = false
+        var videoImgGenerator: AVAssetImageGenerator?
+        var cgImage: CGImage?
+        
         let aset = AVURLAsset(url: URL(fileURLWithPath: path+"/\(pathFiles[indexPath.item])"), options: nil)
-        let imgGenerator = AVAssetImageGenerator(asset: aset)
-        let cgImage = try! imgGenerator.copyCGImage(at: CMTimeMake(0, 1), actualTime: nil)
-        cell.imageView.image = UIImage(cgImage: cgImage)
-        cell.imageView.contentMode = .scaleAspectFill
+        if aset.isPlayable {
+            let videoAset = aset.tracks(withMediaType: AVMediaTypeVideo)
+            let audioAset = aset.tracks(withMediaType: AVMediaTypeAudio)
+            
+            if !videoAset.isEmpty {
+                isVideo = true
+                isAudio = !isVideo
+            } else if !audioAset.isEmpty {
+                isAudio = true
+                isVideo = !isAudio
+            }
+            
+            if isVideo {
+                videoImgGenerator = AVAssetImageGenerator(asset: aset)
+                cgImage = try! videoImgGenerator?.copyCGImage(at: CMTimeMake(0, 1), actualTime: nil)
+                cell.imageView.image = UIImage(cgImage: cgImage!)
+            } else if isAudio {
+                cell.imageView.image = UIImage(named: "Music-icon")
+            }
+        }
+        
+        cell.imageView.contentMode = .scaleAspectFit
+        cell.label_fileName.text = pathFiles[indexPath.item]
+        cell.sizeToFit()
         
         return cell
     }
