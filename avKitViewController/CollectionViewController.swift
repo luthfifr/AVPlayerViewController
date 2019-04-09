@@ -70,8 +70,8 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         
         let aset = AVURLAsset(url: URL(fileURLWithPath: path+"/\(pathFiles[indexPath.item])"), options: nil)
         if aset.isPlayable {
-            let videoAset = aset.tracks(withMediaType: AVMediaTypeVideo)
-            let audioAset = aset.tracks(withMediaType: AVMediaTypeAudio)
+            let videoAset = aset.tracks(withMediaType: AVMediaType.video)
+            let audioAset = aset.tracks(withMediaType: AVMediaType.audio)
             
             if !videoAset.isEmpty {
                 isVideo = true
@@ -83,7 +83,7 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
             
             if isVideo {
                 videoImgGenerator = AVAssetImageGenerator(asset: aset)
-                cgImage = try! videoImgGenerator?.copyCGImage(at: CMTimeMake(0, 1), actualTime: nil)
+                cgImage = try! videoImgGenerator?.copyCGImage(at: CMTimeMake(value: 0, timescale: 1), actualTime: nil)
                 cell.imageView.image = UIImage(cgImage: cgImage!)
             } else if isAudio {
                 cell.imageView.image = UIImage(named: "Music-icon")

@@ -42,8 +42,8 @@ class AVViewController: AVPlayerViewController, AVPlayerViewControllerDelegate{
         self.allowsPictureInPicturePlayback = true
         
         if !(player?.currentItem?.asset.isPlayable)! {
-            let alertStatus = UIAlertController (title: "Media Playback Error", message: "This media can not be played. Please select another media.", preferredStyle: UIAlertControllerStyle.alert)
-            alertStatus.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.default,handler:  {(action) in
+            let alertStatus = UIAlertController (title: "Media Playback Error", message: "This media can not be played. Please select another media.", preferredStyle: UIAlertController.Style.alert)
+            alertStatus.addAction(UIAlertAction(title: "Close", style: UIAlertAction.Style.default,handler:  {(action) in
                 self.dismiss(animated: true, completion: nil)
             }))
             self.present(alertStatus, animated: true, completion: nil)

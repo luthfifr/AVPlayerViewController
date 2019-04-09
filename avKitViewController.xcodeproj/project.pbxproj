@@ -13,35 +13,10 @@
 		CF95BC0E1EEFA19300CEC00C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF95BC0C1EEFA19300CEC00C /* Main.storyboard */; };
 		CF95BC101EEFA19300CEC00C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF95BC0F1EEFA19300CEC00C /* Assets.xcassets */; };
 		CF95BC131EEFA19300CEC00C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF95BC111EEFA19300CEC00C /* LaunchScreen.storyboard */; };
-		CF95BC1E1EEFA19300CEC00C /* avKitViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC1D1EEFA19300CEC00C /* avKitViewControllerTests.swift */; };
-		CF95BC291EEFA19300CEC00C /* avKitViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC281EEFA19300CEC00C /* avKitViewControllerUITests.swift */; };
 		CF95BC371EEFF87800CEC00C /* aset in Resources */ = {isa = PBXBuildFile; fileRef = CF95BC361EEFF87800CEC00C /* aset */; };
-		CF95BC381EEFF87800CEC00C /* aset in Resources */ = {isa = PBXBuildFile; fileRef = CF95BC361EEFF87800CEC00C /* aset */; };
-		CF95BC391EEFF87800CEC00C /* aset in Resources */ = {isa = PBXBuildFile; fileRef = CF95BC361EEFF87800CEC00C /* aset */; };
 		CF95BC3B1EF0041D00CEC00C /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC3A1EF0041D00CEC00C /* CollectionViewController.swift */; };
-		CF95BC3C1EF0041D00CEC00C /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC3A1EF0041D00CEC00C /* CollectionViewController.swift */; };
-		CF95BC3D1EF0041D00CEC00C /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC3A1EF0041D00CEC00C /* CollectionViewController.swift */; };
 		CF95BC3F1EF00A4000CEC00C /* PhotoCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC3E1EF00A4000CEC00C /* PhotoCVC.swift */; };
-		CF95BC401EF00A4000CEC00C /* PhotoCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC3E1EF00A4000CEC00C /* PhotoCVC.swift */; };
-		CF95BC411EF00A4000CEC00C /* PhotoCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95BC3E1EF00A4000CEC00C /* PhotoCVC.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CF95BC1A1EEFA19300CEC00C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CF95BBFD1EEFA19300CEC00C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CF95BC041EEFA19300CEC00C;
-			remoteInfo = avKitViewController;
-		};
-		CF95BC251EEFA19300CEC00C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CF95BBFD1EEFA19300CEC00C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CF95BC041EEFA19300CEC00C;
-			remoteInfo = avKitViewController;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CF95912C1EF2368B0024877E /* PopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
@@ -52,12 +27,6 @@
 		CF95BC0F1EEFA19300CEC00C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF95BC121EEFA19300CEC00C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF95BC141EEFA19300CEC00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF95BC191EEFA19300CEC00C /* avKitViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = avKitViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF95BC1D1EEFA19300CEC00C /* avKitViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avKitViewControllerTests.swift; sourceTree = "<group>"; };
-		CF95BC1F1EEFA19300CEC00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF95BC241EEFA19300CEC00C /* avKitViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = avKitViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF95BC281EEFA19300CEC00C /* avKitViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avKitViewControllerUITests.swift; sourceTree = "<group>"; };
-		CF95BC2A1EEFA19300CEC00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF95BC361EEFF87800CEC00C /* aset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = aset; sourceTree = "<group>"; };
 		CF95BC3A1EF0041D00CEC00C /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		CF95BC3E1EF00A4000CEC00C /* PhotoCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCVC.swift; sourceTree = "<group>"; };
@@ -71,20 +40,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF95BC161EEFA19300CEC00C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CF95BC211EEFA19300CEC00C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -92,8 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				CF95BC071EEFA19300CEC00C /* avKitViewController */,
-				CF95BC1C1EEFA19300CEC00C /* avKitViewControllerTests */,
-				CF95BC271EEFA19300CEC00C /* avKitViewControllerUITests */,
 				CF95BC061EEFA19300CEC00C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,8 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				CF95BC051EEFA19300CEC00C /* avKitViewController.app */,
-				CF95BC191EEFA19300CEC00C /* avKitViewControllerTests.xctest */,
-				CF95BC241EEFA19300CEC00C /* avKitViewControllerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,24 +74,6 @@
 				CF95BC141EEFA19300CEC00C /* Info.plist */,
 			);
 			path = avKitViewController;
-			sourceTree = "<group>";
-		};
-		CF95BC1C1EEFA19300CEC00C /* avKitViewControllerTests */ = {
-			isa = PBXGroup;
-			children = (
-				CF95BC1D1EEFA19300CEC00C /* avKitViewControllerTests.swift */,
-				CF95BC1F1EEFA19300CEC00C /* Info.plist */,
-			);
-			path = avKitViewControllerTests;
-			sourceTree = "<group>";
-		};
-		CF95BC271EEFA19300CEC00C /* avKitViewControllerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CF95BC281EEFA19300CEC00C /* avKitViewControllerUITests.swift */,
-				CF95BC2A1EEFA19300CEC00C /* Info.plist */,
-			);
-			path = avKitViewControllerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,42 +96,6 @@
 			productReference = CF95BC051EEFA19300CEC00C /* avKitViewController.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CF95BC181EEFA19300CEC00C /* avKitViewControllerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CF95BC301EEFA19300CEC00C /* Build configuration list for PBXNativeTarget "avKitViewControllerTests" */;
-			buildPhases = (
-				CF95BC151EEFA19300CEC00C /* Sources */,
-				CF95BC161EEFA19300CEC00C /* Frameworks */,
-				CF95BC171EEFA19300CEC00C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CF95BC1B1EEFA19300CEC00C /* PBXTargetDependency */,
-			);
-			name = avKitViewControllerTests;
-			productName = avKitViewControllerTests;
-			productReference = CF95BC191EEFA19300CEC00C /* avKitViewControllerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CF95BC231EEFA19300CEC00C /* avKitViewControllerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CF95BC331EEFA19300CEC00C /* Build configuration list for PBXNativeTarget "avKitViewControllerUITests" */;
-			buildPhases = (
-				CF95BC201EEFA19300CEC00C /* Sources */,
-				CF95BC211EEFA19300CEC00C /* Frameworks */,
-				CF95BC221EEFA19300CEC00C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CF95BC261EEFA19300CEC00C /* PBXTargetDependency */,
-			);
-			name = avKitViewControllerUITests;
-			productName = avKitViewControllerUITests;
-			productReference = CF95BC241EEFA19300CEC00C /* avKitViewControllerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,24 +109,13 @@
 					CF95BC041EEFA19300CEC00C = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2L6QV2N95T;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
 						};
-					};
-					CF95BC181EEFA19300CEC00C = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 2L6QV2N95T;
-						ProvisioningStyle = Automatic;
-						TestTargetID = CF95BC041EEFA19300CEC00C;
-					};
-					CF95BC231EEFA19300CEC00C = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 2L6QV2N95T;
-						ProvisioningStyle = Automatic;
-						TestTargetID = CF95BC041EEFA19300CEC00C;
 					};
 				};
 			};
@@ -247,8 +133,6 @@
 			projectRoot = "";
 			targets = (
 				CF95BC041EEFA19300CEC00C /* avKitViewController */,
-				CF95BC181EEFA19300CEC00C /* avKitViewControllerTests */,
-				CF95BC231EEFA19300CEC00C /* avKitViewControllerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,22 +146,6 @@
 				CF95BC371EEFF87800CEC00C /* aset in Resources */,
 				CF95BC101EEFA19300CEC00C /* Assets.xcassets in Resources */,
 				CF95BC0E1EEFA19300CEC00C /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CF95BC171EEFA19300CEC00C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CF95BC381EEFF87800CEC00C /* aset in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CF95BC221EEFA19300CEC00C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CF95BC391EEFF87800CEC00C /* aset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,40 +164,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF95BC151EEFA19300CEC00C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CF95BC3C1EF0041D00CEC00C /* CollectionViewController.swift in Sources */,
-				CF95BC401EF00A4000CEC00C /* PhotoCVC.swift in Sources */,
-				CF95BC1E1EEFA19300CEC00C /* avKitViewControllerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CF95BC201EEFA19300CEC00C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CF95BC3D1EF0041D00CEC00C /* CollectionViewController.swift in Sources */,
-				CF95BC411EF00A4000CEC00C /* PhotoCVC.swift in Sources */,
-				CF95BC291EEFA19300CEC00C /* avKitViewControllerUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CF95BC1B1EEFA19300CEC00C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CF95BC041EEFA19300CEC00C /* avKitViewController */;
-			targetProxy = CF95BC1A1EEFA19300CEC00C /* PBXContainerItemProxy */;
-		};
-		CF95BC261EEFA19300CEC00C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CF95BC041EEFA19300CEC00C /* avKitViewController */;
-			targetProxy = CF95BC251EEFA19300CEC00C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CF95BC0C1EEFA19300CEC00C /* Main.storyboard */ = {
@@ -453,7 +288,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.luthfifathurrahman.avKitViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -467,66 +303,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.luthfifathurrahman.avKitViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		CF95BC311EEFA19300CEC00C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 2L6QV2N95T;
-				INFOPLIST_FILE = avKitViewControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.luthfifathurrahman.avKitViewControllerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/avKitViewController.app/avKitViewController";
-			};
-			name = Debug;
-		};
-		CF95BC321EEFA19300CEC00C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 2L6QV2N95T;
-				INFOPLIST_FILE = avKitViewControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.luthfifathurrahman.avKitViewControllerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/avKitViewController.app/avKitViewController";
-			};
-			name = Release;
-		};
-		CF95BC341EEFA19300CEC00C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 2L6QV2N95T;
-				INFOPLIST_FILE = avKitViewControllerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.luthfifathurrahman.avKitViewControllerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = avKitViewController;
-			};
-			name = Debug;
-		};
-		CF95BC351EEFA19300CEC00C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 2L6QV2N95T;
-				INFOPLIST_FILE = avKitViewControllerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.luthfifathurrahman.avKitViewControllerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = avKitViewController;
 			};
 			name = Release;
 		};
@@ -547,24 +326,6 @@
 			buildConfigurations = (
 				CF95BC2E1EEFA19300CEC00C /* Debug */,
 				CF95BC2F1EEFA19300CEC00C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CF95BC301EEFA19300CEC00C /* Build configuration list for PBXNativeTarget "avKitViewControllerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CF95BC311EEFA19300CEC00C /* Debug */,
-				CF95BC321EEFA19300CEC00C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CF95BC331EEFA19300CEC00C /* Build configuration list for PBXNativeTarget "avKitViewControllerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CF95BC341EEFA19300CEC00C /* Debug */,
-				CF95BC351EEFA19300CEC00C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
